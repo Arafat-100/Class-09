@@ -1,0 +1,213 @@
+/* COMMON CSS START */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul,ol{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+} 
+.section_head{
+    text-align: center;
+    padding: 95px 0;
+}
+.section_head h2{
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.section_head p{
+    color: #7e8287;
+    font-size: 16px;
+    line-height: 41px;
+}
+.section_head p b{
+    font-size: 23px;
+}
+/* COMMON CSS END */
+/* NAV START */
+nav{
+    background-color: #02918b;
+}
+nav .container{
+    padding: 18px 0 23px 0;
+}
+nav .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .row ul li{
+    display: inline-block;
+}
+nav .row ul li a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: 800;
+    padding: 0 25px;
+}
+/* NAV END */
+/* BANNER START */
+#banner{
+    background-image: url(./img/MYFOLIO.jpg);
+    height: 730px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#banner .container .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 730px;
+    justify-content: center;
+    color: #ffff;
+}
+#banner .container .row h4{
+    font-size: 30px;
+    /* font-weight: 400; */
+}
+#banner .container .row h2{
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 16px;
+    text-transform: uppercase;
+}
+#banner .container .row h6{
+    font-size: 18px;
+}
+#banner .container .row img{
+    width: 107px;
+    margin: 26px 0;
+}
+#banner .container .row a{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    padding: 20px 40px;
+    margin: 26px 0;
+    background-color: #cfc91d;
+
+}
+/* BANNER END */
+/* ABOUT START */
+#about .section_head p{
+    width: 880px;
+    margin: auto;
+}
+#about .about_card_container{
+    margin: 50px 0;
+    text-align: center;
+}
+#about .about_card_container .about_card{
+    border-right: 1px solid rgb(187, 183, 183);
+    padding: 38px 61px;
+}
+#about .about_card_container .about_card:last-child{
+    border-right-color: transparent;
+}
+#about .about_card_container .about_card h3{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 30px 0;
+}
+/* ABOUT END */
+/* SERVICES START */
+#services{
+    background-image: url(./img/MYFOLIO\ bg\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0;
+}
+#section_head{
+    width: 50%;
+}
+#services .container .section_head{
+    width: 50%;
+    text-align: left;
+}
+#services .container .section_head .services_card_icon{
+    width: 50%;
+    padding: 55px 128px 0 0;
+}
+#services .container .section_head .services_card_icon h3{
+    font-size: 16px;
+}
+#services .container .section_head .services_card_icon p{
+    font-size: 11px;
+    line-height: 20px;
+}
+/* SERVICES END */
+/* MY WORK START */
+#work .section_head p{
+    width: 678px;
+    margin: auto;
+    font-size: 16px;
+}
+#work .work_card_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+#work .work_card{
+    width: 25%;
+    position: relative;
+}
+#work .work_card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#work .work_card .overly{
+    position: absolute;
+    padding: 20px;
+    background-color: rgba(2, 145, 145, 0.85);
+    color: #ffff;
+    inset: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: 1s;
+    transform: rotate(45deg) scale(0);
+    transform-origin: right;
+}
+#work .work_card:hover .overly{
+    transform: rotate(0) scale(1);
+    transform-origin: top;
+}
+#work .work_card .overly h3{
+    font-size: 16px;
+    margin: 20px 0;
+}
+#work .work_card .overly p{
+    font-size: 13px;
+    line-height: 21px;
+}
+/* MY WORK END */
+/* CONTACT START */
+#contact .section_head p{
+    width: 678px;
+    margin: auto;
+    font-size: 16px;
+}
+/* CONTACT END */
